@@ -25,7 +25,7 @@ export async function addAFish(){
 
 //  Get all fishies
 export async function getAllFish(){
-    const fishList = await db.collection('fish').find({}).toArray();
+    const fishList = await fishDb.find({}).toArray();
     console.table(fishList);
 }
 // delete tetro fish
